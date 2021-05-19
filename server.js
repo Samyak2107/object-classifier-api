@@ -20,8 +20,6 @@ const database = knex({
     }
   });
 
-console.log(database.select('*').from('users'));
-
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(cors());
